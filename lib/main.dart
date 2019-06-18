@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'demo/container_demo.dart';
+import 'demo/text_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,33 +13,35 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: ContainerDemo()
-    );
-  }
-}
-
-class TextDemo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('FlutterBasic'),
-      ),
-      body: Center(
-        child: Text(
-          'hello Mr. Gu ,这是测试flutter Text Widget的属性。textAlign:设置文字对齐方式；overflow:超出文本显样式',
-          textAlign: TextAlign.left,
-//            maxLines: 1,
-//            overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.pink,
-            decoration: TextDecoration.underline,
-            decorationStyle: TextDecorationStyle.solid,
-          ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Basic Widget'),
+        ),
+        body: ListView(
+          children: <Widget>[
+            ListItem(title: 'Text Widget', page: TextDemo()),
+            ListItem(title: 'Container Widget', page: ContainerDemo()),
+          ],
         ),
       ),
     );
   }
 }
 
+class ListItem extends StatelessWidget {
+  final String title;
+  final Widget page;
+
+  ListItem({this.title, this.page});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text(title),
+      onTap: () {
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => page));
+      },
+    );
+  }
+}
