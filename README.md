@@ -61,3 +61,9 @@ Flutter 基础
   * CircleAvatar 原形头像小部件 radius:设置大小
   
 ## Card 卡片布局
+
+## 页面导航
+  * Navigator.of(context).push 打开一个页面
+  * Navigator.of(context).pop() 关闭页面
+  * 导航的参数传递
+    * 
