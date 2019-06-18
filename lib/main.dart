@@ -8,7 +8,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Basic',
       theme: ThemeData(
-        primaryColor: Colors.tealAccent,
+        primarySwatch: Colors.indigo,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('FlutterBasic'),
+        ),
       ),
     );
   }
