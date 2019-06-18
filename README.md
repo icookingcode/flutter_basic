@@ -56,3 +56,6 @@ Flutter 基础
 ## Row 小部件(横向) && Column 小部件(纵向)
   * Expanded 扩展小部件(灵活布局) 
   
+## Stack 层叠小部件 && Positioned 定位小部件 
+  * alignment:FractionalOffset(x,y) 层叠的对齐方式 （x,y取值范围 0-1）
+  * CircleAvatar 原形头像小部件 radius:设置大小
