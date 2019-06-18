@@ -41,3 +41,6 @@ Flutter 基础
   * repeat:重复铺满
 
 ## ListView 小部件
+  * children:添加ListView的内容（固定数量的列表）
+  * scrollDirection:Axis.horizontal 横向列表
+  * ListView.builder 动态生成list列表
