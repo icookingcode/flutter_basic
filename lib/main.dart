@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'demo/column_demo.dart';
 import 'demo/container_demo.dart';
 import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
             ListItem(title: 'ListView Widget', page: ListViewDemo()),
             ListItem(title: 'GridView Widget', page: GridViewDemo()),
             ListItem(title: 'Row Widget', page: RowDemo()),
+            ListItem(title: 'Column Widget', page: ColumnDemo()),
           ],
         ),
       ),

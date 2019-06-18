@@ -53,6 +53,6 @@ Flutter 基础
     * mainAxisSpacing: 网格间距
     * childAspectRatio: 网格的宽高比
     
-## Row 小部件(横向)
+## Row 小部件(横向) && Column 小部件(纵向)
   * Expanded 扩展小部件(灵活布局) 
   
