@@ -52,3 +52,7 @@ Flutter 基础
     * crossAxisSpacing: 网格间距
     * mainAxisSpacing: 网格间距
     * childAspectRatio: 网格的宽高比
+    
+## Row 小部件(横向)
+  * Expanded 扩展小部件(灵活布局) 
+  

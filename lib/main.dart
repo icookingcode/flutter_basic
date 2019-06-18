@@ -4,6 +4,7 @@ import 'demo/container_demo.dart';
 import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
 import 'demo/listview_demo.dart';
+import 'demo/row_demo.dart';
 import 'demo/text_demo.dart';
 
 void main() => runApp(MyApp());
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
             ListItem(title: 'Image Widget', page: ImageDemo()),
             ListItem(title: 'ListView Widget', page: ListViewDemo()),
             ListItem(title: 'GridView Widget', page: GridViewDemo()),
+            ListItem(title: 'Row Widget', page: RowDemo()),
           ],
         ),
       ),
