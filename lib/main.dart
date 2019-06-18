@@ -7,6 +7,7 @@ import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/route/first_page.dart';
+import 'demo/route/product_list_page.dart';
 import 'demo/row_demo.dart';
 import 'demo/stack_demo.dart';
 import 'demo/text_demo.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
             ListItem(title: 'Stack Widget', page: StackDemo()),
             ListItem(title: 'Card Widget', page: CardDemo()),
             ListItem(title: 'Route Demo', page: FirstPage()),
+            ListItem(title: 'Route with Params', page: ProductsPage()),
           ],
         ),
       ),
