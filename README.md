@@ -20,4 +20,12 @@ Flutter 基础
   * overflow:超出文本显样式
   * maxLines：最大显示行数
   * style:设置文字大小、颜色、下划线等
+  
+## Container 容器小部件
+  * alignment:子部件的对齐方式
+  * padding:内边距
+  * margin:外边距
+  * color:纯色背景
+  * decoration:添加渐变色背景
+    * BoxDecoration: gradient：渐变色；border: 添加边框；borderRadius：圆角
 
