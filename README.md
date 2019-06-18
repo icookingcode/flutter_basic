@@ -44,3 +44,11 @@ Flutter 基础
   * children:添加ListView的内容（固定数量的列表）
   * scrollDirection:Axis.horizontal 横向列表
   * ListView.builder 动态生成list列表
+
+## GridView 小部件
+  *  GridView.count 生成网格(固定数量)
+    * padding: 内边距
+    * crossAxisCount：网格数量
+    * crossAxisSpacing: 网格间距
+    * mainAxisSpacing: 网格间距
+    * childAspectRatio: 网格的宽高比

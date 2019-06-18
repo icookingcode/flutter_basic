@@ -13,7 +13,7 @@ class ListViewDemo extends StatelessWidget {
 }
 
 class Body3 extends StatelessWidget {
-  List<String> _list = List()
+  final List<String> _list = List()
     ..add(
         "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1638079650,2146947483&fm=27&gp=0.jpg")
     ..add(

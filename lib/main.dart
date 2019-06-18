@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'demo/container_demo.dart';
+import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/text_demo.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
             ListItem(title: 'Container Widget', page: ContainerDemo()),
             ListItem(title: 'Image Widget', page: ImageDemo()),
             ListItem(title: 'ListView Widget', page: ListViewDemo()),
+            ListItem(title: 'GridView Widget', page: GridViewDemo()),
           ],
         ),
       ),
