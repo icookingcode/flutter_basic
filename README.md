@@ -29,3 +29,15 @@ Flutter 基础
   * decoration:添加渐变色背景
     * BoxDecoration: gradient：渐变色；border: 添加边框；borderRadius：圆角
 
+## Image 图片小部件
+  * Image.network 加载网络图片小部件
+  * fit:填充方式
+    * fit: BoxFit.contain 保持原图比例，适配容器
+    * fit: BoxFit.fill 平铺适配容器
+    * fit: BoxFit.fitWidth 横向铺满，不变形
+    * fit: BoxFit.cover 铺满，不变形(被裁切)
+    * fit: BoxFit.scaleDown 保持原图大小
+  * colorBlendMode + color :混合模式，添加滤镜效果
+  * repeat:重复铺满
+
+## ListView 小部件
