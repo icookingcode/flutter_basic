@@ -59,3 +59,5 @@ Flutter 基础
 ## Stack 层叠小部件 && Positioned 定位小部件 
   * alignment:FractionalOffset(x,y) 层叠的对齐方式 （x,y取值范围 0-1）
   * CircleAvatar 原形头像小部件 radius:设置大小
+  
+## Card 卡片布局
