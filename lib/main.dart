@@ -56,12 +56,14 @@ class ListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(title),
-      onTap: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => page));
-      },
+    return Card(
+      child: ListTile(
+        title: Text(title),
+        onTap: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => page));
+        },
+      ),
     );
   }
 }
