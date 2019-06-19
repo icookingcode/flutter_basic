@@ -80,3 +80,10 @@ Flutter 基础
     * 保存与获取表单数据 final registerFromKey = GlobalKey<FormState>();
     * 数据验证 validator 
     
+# 获取网络数据
+
+## 网络请求框架
+  * dio: ^2.1.6
+
+## webview框架
+  * flutter_webview_plugin: ^0.3.5
