@@ -1,4 +1,4 @@
-# flutter_basic  http://jspang.com/
+# flutter_basic  
 
 Flutter 基础
 
