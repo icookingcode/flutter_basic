@@ -68,3 +68,15 @@ Flutter 基础
   * 导航的参数传递
     * 在第二个页面中定义参数即可。
     * 数据返回：async + await 异步实现数据返回
+    
+## Form 表单
+  * Theme:定制、使用、重置、覆盖主题
+  * TextField 小部件 文本输入
+    * decoration: InputDecoration 添加文本样式
+    * onChanged: 文本框值发生变化回调
+    * onSubmitted: 点击确定后回调
+  * TextEditingController 监听文本字段变化、初始值设置
+  * Form + TextFormField 实现登录界面
+    * 保存与获取表单数据 final registerFromKey = GlobalKey<FormState>();
+    * 数据验证 validator 
+    

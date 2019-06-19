@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'demo/card_demo.dart';
 import 'demo/column_demo.dart';
 import 'demo/container_demo.dart';
+import 'demo/form_demo.dart';
 import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
 import 'demo/listview_demo.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
             ListItem(title: 'Card Widget', page: CardDemo()),
             ListItem(title: 'Route Demo', page: FirstPage()),
             ListItem(title: 'Route with Params', page: ProductsPage()),
+            ListItem(title: 'From 表单', page: FormDemo()),
           ],
         ),
       ),
