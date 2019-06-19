@@ -4,14 +4,24 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("商品详情页"),
+        title: Text("我是小姐姐"),
       ),
       body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          child: Text('返回上一页'),
+        child: Column(
+          children: <Widget>[
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pop("大长腿小姐姐：15251538462");
+              },
+              child: Text('大长腿小姐姐'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pop("小蛮腰小姐姐：15251538999");
+              },
+              child: Text('小蛮腰小姐姐'),
+            )
+          ],
         ),
       ),
     );
