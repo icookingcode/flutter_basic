@@ -12,6 +12,7 @@ import 'demo/row_demo.dart';
 import 'demo/stack_demo.dart';
 import 'demo/text_demo.dart';
 import 'movies/movie_list.dart';
+import 'novel/novel_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage>
   TabController _controller;
   final String title1 = 'Basic Widget';
   final String title2 = 'Dio';
-  final String title3 = 'Basic Widget';
+  final String title3 = '我的小说';
   String title = 'Basic Widget';
 
   @override
@@ -84,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage>
         children: [
           WidgetPage(),
           MovieList(type: 'in_theaters',),
-          WidgetPage(),
+          NovelList(),
         ],
       ),
       bottomNavigationBar: Container(
@@ -103,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage>
               icon: Icon(Icons.network_cell),
             ),
             Tab(
-              text: 'Mine',
+              text: 'Novel',
               icon: Icon(Icons.my_location),
             ),
           ],

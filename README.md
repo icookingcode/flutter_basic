@@ -87,3 +87,6 @@ Flutter 基础
 
 ## webview框架
   * flutter_webview_plugin: ^0.3.5
+  
+# 数据存储
+  * 数据存储之SharedPreferences shared_preferences: ^0.5.3+1
