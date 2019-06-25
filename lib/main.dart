@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'demo/card_demo.dart';
 import 'demo/column_demo.dart';
 import 'demo/container_demo.dart';
+import 'demo/date_time_demo.dart';
 import 'demo/form_demo.dart';
 import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
@@ -26,6 +28,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
+      //国际化支持
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('zh','CH'),
+        Locale('en','US'),
+      ],
       home: MyHomePage(),
     );
   }
@@ -140,6 +151,7 @@ class _WidgetPageState extends State<WidgetPage>
         ListItem(title: 'Route with Params', page: ProductsPage()),
         ListItem(title: 'From 表单', page: FormDemo()),
         ListItem(title: 'Radio、RadioListTile', page: RadioDemo()),
+        ListItem(title: '日期和时间戳', page: DateTimeDemo()),
       ],
     );
   }

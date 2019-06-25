@@ -84,6 +84,10 @@ Flutter 基础
   * value 值
   * onChanged 回调
   * groupValue 主值
+  
+## 日期和时间戳
+  * 获取当前日期： var now = DateTime.now();
+  * 获取当前时间： var nowTime = TimeOfDay.now();
     
 # 获取网络数据
 
