@@ -6,6 +6,7 @@ import 'demo/form_demo.dart';
 import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
 import 'demo/listview_demo.dart';
+import 'demo/radio_demo.dart';
 import 'demo/route/first_page.dart';
 import 'demo/route/product_list_page.dart';
 import 'demo/row_demo.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Basic',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
@@ -137,6 +139,7 @@ class _WidgetPageState extends State<WidgetPage>
         ListItem(title: 'Route Demo', page: FirstPage()),
         ListItem(title: 'Route with Params', page: ProductsPage()),
         ListItem(title: 'From 表单', page: FormDemo()),
+        ListItem(title: 'Radio、RadioListTile', page: RadioDemo()),
       ],
     );
   }

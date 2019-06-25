@@ -80,6 +80,11 @@ Flutter 基础
     * 保存与获取表单数据 final registerFromKey = GlobalKey<FormState>();
     * 数据验证 validator 
     
+## Radio 单选 
+  * value 值
+  * onChanged 回调
+  * groupValue 主值
+    
 # 获取网络数据
 
 ## 网络请求框架
