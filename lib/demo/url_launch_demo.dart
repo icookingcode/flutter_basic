@@ -28,7 +28,7 @@ class UrlLaunchDemo extends StatelessWidget {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.grey.withOpacity(0.8),
         textColor: Colors.white,
         fontSize: 14.0);
   }
