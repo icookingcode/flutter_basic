@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/demo/url_launch_demo.dart';
 import 'package:flutter_basic/pages/splash_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'demo/card_demo.dart';
@@ -9,6 +10,7 @@ import 'demo/form_demo.dart';
 import 'demo/gridview_demo.dart';
 import 'demo/image_demo.dart';
 import 'demo/listview_demo.dart';
+import 'demo/pull_to_refresh_demo.dart';
 import 'demo/radio_demo.dart';
 import 'demo/route/first_page.dart';
 import 'demo/route/product_list_page.dart';
@@ -153,6 +155,8 @@ class _WidgetPageState extends State<WidgetPage>
         ListItem(title: 'From 表单', page: FormDemo()),
         ListItem(title: 'Radio、RadioListTile', page: RadioDemo()),
         ListItem(title: '日期和时间戳', page: DateTimeDemo()),
+        ListItem(title: 'url_launcher 5.0.3', page: UrlLaunchDemo()),
+        ListItem(title: 'pull_to_refresh 1.4.8', page: PullToRefreshDemo()),
       ],
     );
   }
