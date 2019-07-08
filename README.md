@@ -99,3 +99,6 @@ Flutter 基础
   
 # 数据存储
   * 数据存储之SharedPreferences shared_preferences: ^0.5.3+1
+  
+#功能添加 
+  * 添加闪屏页

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/pages/splash_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'demo/card_demo.dart';
 import 'demo/column_demo.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         Locale('zh','CH'),
         Locale('en','US'),
       ],
-      home: MyHomePage(),
+      home: SplashPage(),
     );
   }
 }
