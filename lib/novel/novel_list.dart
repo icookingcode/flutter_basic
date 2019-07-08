@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/common/utils.dart';
 import 'package:flutter_basic/data_store/shared_prefences.dart';
 
 import 'detail_net.dart';
@@ -9,7 +10,14 @@ class NovelList extends StatefulWidget {
   _NovelListState createState() => _NovelListState();
 }
 
-class _NovelListState extends State<NovelList> {
+class _NovelListState extends State<NovelList>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  void initState() {
+    super.initState();
+    debugPrint(Utils.getPinyin("蛇妻美人"));
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -25,16 +33,21 @@ class _NovelListState extends State<NovelList> {
       ],
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }
 
 class NovelItem extends StatelessWidget {
   final Novel novel;
 
-  NovelItem({@required this.novel,});
+  NovelItem({
+    @required this.novel,
+  });
 
-  _fixUrl() async{
+  _fixUrl() async {
     String url = await SharedPreferencesUtil.getNovelUrl(novel.key);
-    if(url.isNotEmpty){
+    if (url.isNotEmpty) {
       novel.url = url;
     }
   }
@@ -63,5 +76,4 @@ class NovelItem extends StatelessWidget {
       ),
     );
   }
-
 }
