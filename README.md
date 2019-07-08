@@ -106,3 +106,4 @@ Flutter 基础
   * 添加工具：url_launcher 5.0.3 （在浏览器中打开网页） 
   * 添加工具：pull_to_refresh: ^1.4.8 （刷新控件）
     ** Timer 实现延时加载效果0
+  * 添加工具：fluttertoast: ^3.1.0 （Toast工具）

@@ -44,6 +44,8 @@ dependencies:
   # https://github.com/peng8350/flutter_pulltorefresh
   pull_to_refresh: 1.4.8
 
+  fluttertoast: ^3.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
