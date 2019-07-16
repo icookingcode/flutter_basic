@@ -31,21 +31,26 @@ class _PullToRefreshDemoState extends State<PullToRefreshDemo> {
 
   void _onRefresh() {
     new Timer(
-        Duration(
-          seconds: 2,
-        ), () {
-      _controller.refreshCompleted();
-    });
+      Duration(
+        seconds: 2,
+      ),
+      () {
+        _controller.resetNoData();
+        _controller.refreshCompleted();
+      },
+    );
   }
 
   void _onLoading() {
     new Timer(
-        Duration(
-          seconds: 2,
-        ), () {
-      _controller.loadComplete();
-      _controller.loadNoData();
-    });
+      Duration(
+        seconds: 2,
+      ),
+      () {
+        _controller.loadComplete();
+        _controller.loadNoData();
+      },
+    );
   }
 
   @override
