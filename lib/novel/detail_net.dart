@@ -32,7 +32,7 @@ class _NovelDetailState extends State<NovelDetail> {
     if(url.startsWith(_normalUrl)){
       SharedPreferencesUtil.saveNovelUrl(widget.novel.key,url);
     }else{
-//      debugPrint('url:$url');
+      debugPrint('url:$url');
       flutterWebviewPlugin.goBack();
     }
   }

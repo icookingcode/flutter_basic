@@ -25,7 +25,7 @@ class _NovelListState extends State<NovelList>
         NovelItem(
           novel: Novel(
               title: '蛇妻美人',
-              url: 'https://m.xiuxs.org/sheqimeiren/4444980.html',
+              url: 'https://m.bqg8.cc/book_35479/16503962.html',
               key: 'sqmr',
               coverUrl:
                   'https://www.bqg8.cc/files/article/image/35/35479/35479s.jpg'),
@@ -48,6 +48,7 @@ class NovelItem extends StatelessWidget {
   _fixUrl() async {
     String url = await SharedPreferencesUtil.getNovelUrl(novel.key);
     if (url.isNotEmpty) {
+      debugPrint(url);
       novel.url = url;
     }
   }
