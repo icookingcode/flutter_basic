@@ -5,6 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'demo/card_demo.dart';
 import 'demo/column_demo.dart';
 import 'demo/container_demo.dart';
+import 'demo/custom_view.dart';
 import 'demo/date_time_demo.dart';
 import 'demo/form_demo.dart';
 import 'demo/gridview_demo.dart';
@@ -157,6 +158,7 @@ class _WidgetPageState extends State<WidgetPage>
         ListItem(title: '日期和时间戳', page: DateTimeDemo()),
         ListItem(title: 'url_launcher 5.0.3', page: UrlLaunchDemo()),
         ListItem(title: 'pull_to_refresh 1.4.8', page: PullToRefreshDemo()),
+        ListItem(title: '自定义View', page: CustomView()),
       ],
     );
   }
