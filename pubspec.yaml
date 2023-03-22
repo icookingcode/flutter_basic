@@ -27,7 +27,7 @@ dependencies:
   cupertino_icons: ^0.1.2
 
   #网络请求框架
-  dio: ^2.1.6
+  dio: ">=2.1.6 <6.0.0"
   # webview框架
   flutter_webview_plugin: ^0.3.5
   #SharedPreferences
